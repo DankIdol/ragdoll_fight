@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Platform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Game.gd" type="Script" id=3]
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Platform" parent="." instance=ExtResource( 2 )]
+position = Vector2( 369.247, 543.951 )
+scale = Vector2( 23.6509, -3.37824 )
+
+[node name="Character" parent="." instance=ExtResource( 1 )]
+position = Vector2( 313.518, 248.346 )
+controlled = true
+
+[node name="Platform2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 568.641, 438.822 )
+
+[node name="Platform3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 567.783, 321.362 )
+
+[node name="Platform4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 564.354, 220.191 )
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Debug" type="Label" parent="."]
+margin_right = 170.0
+margin_bottom = 88.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Character2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 320.061, 443.07 )
